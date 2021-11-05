@@ -1,18 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../../core/services/auth.service';
 
 @Component({
   selector: 'ac-signin',
   template: `
-    <p>
-      signin works!
-    </p>
+    
+    <input type="text">
+    <input type="text">
+    <button (click)="authService.login('a', 'b')">submit</button>
   `,
   styles: [
   ]
 })
 export class SigninComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authService: AuthService) {
+
+  }
 
   ngOnInit(): void {
   }

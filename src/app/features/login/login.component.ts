@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'ac-login',
   template: `
    
-    <div [ngClass]="{}"></div>
     <ac-card></ac-card>
     <ac-signin></ac-signin>
     <ac-registration></ac-registration>
